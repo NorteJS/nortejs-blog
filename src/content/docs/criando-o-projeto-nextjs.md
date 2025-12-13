@@ -24,6 +24,15 @@ public/
 
 Mostre onde ficam Server Components por padrão (`app/...`) e como separar utilitários em `lib/`.
 
+## Designer system e componentes genéricos
+Recursos relacionados ao design system (úteis para devs):
+
+- [Atomic Design — O que é, como surgiu e sua importância para a criação do design system (Medium)](https://medium.com/pretux/atomic-design-o-que-%C3%A9-como-surgiu-e-sua-import%C3%A2ncia-para-a-cria%C3%A7%C3%A3o-do-design-system-e3ac7b5aca2c)
+- [shadcn UI — Biblioteca de componentes e utilitários (ui.shadcn.com)](https://ui.shadcn.com/)
+- [shadcn UI Design System — Arquivo no Figma (Community)](https://www.figma.com/community/file/1203061493325953101/shadcn-ui-design-system)
+
+
+
 ## App Router
 
 - Cada pasta em `app/` é uma rota.
