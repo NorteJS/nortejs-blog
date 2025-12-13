@@ -14,13 +14,13 @@ Use colchetes para criar parâmetros (`app/eventos/[slug]/page.tsx`).
 
 ```tsx
 // app/eventos/[slug]/page.tsx
-import { notFound } from 'next/navigation';
+import { notFound } from "next/navigation";
 
 type Props = { params: { slug: string } };
 
 const eventos = {
-  meetup: 'Meetup mensal em Belém',
-  workshop: 'Workshop Next.js Hands-on',
+  meetup: "Meetup mensal em Belém",
+  workshop: "Workshop Next.js Hands-on",
 };
 
 export default function Evento({ params }: Props) {
@@ -42,7 +42,11 @@ export default function Evento({ params }: Props) {
 
 ```tsx
 // app/eventos/layout.tsx
-export default function EventosLayout({ children }: { children: React.ReactNode }) {
+export default function EventosLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <main>
       <header>Agenda NorteJS</header>
@@ -58,7 +62,7 @@ export default function EventosLayout({ children }: { children: React.ReactNode 
 - Em demos, mostre a diferença entre usar `<a>` e `<Link>` (tempo de carregamento e preservação de estado).
 
 ```tsx
-import Link from 'next/link';
+import Link from "next/link";
 
 export function Menu() {
   return (

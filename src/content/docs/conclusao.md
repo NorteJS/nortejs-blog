@@ -31,16 +31,16 @@ description: Recapitule o workshop e direcione quem participou para os próximos
 ## Snippet para encerrar a apresentação
 
 ```ts
-const workshopJourney = ['setup', 'router', 'dados', 'deploy'] as const;
+const workshopJourney = ["setup", "router", "dados", "deploy"] as const;
 
 type Stage = (typeof workshopJourney)[number];
 
 export function nextStep(stage: Stage): string {
   const order: Record<Stage, string> = {
-    setup: 'Compartilhe o checklist de ambiente.',
-    router: 'Demonstre rotas e layouts ao vivo.',
-    dados: 'Mostre Server/Client Components falando entre si.',
-    deploy: 'Publique no Vercel/Netlify e compartilhe no Discord NorteJS.',
+    setup: "Compartilhe o checklist de ambiente.",
+    router: "Demonstre rotas e layouts ao vivo.",
+    dados: "Mostre Server/Client Components falando entre si.",
+    deploy: "Publique no Vercel/Netlify e compartilhe no Discord NorteJS.",
   };
   return order[stage];
 }

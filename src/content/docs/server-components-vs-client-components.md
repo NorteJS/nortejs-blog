@@ -10,11 +10,11 @@ description: Explicação direta para apresentar durante o workshop NorteJS.
 
 ## Diferença prática
 
-| Item | Server | Client |
-| --- | --- | --- |
-| Execução | Node.js / edge | Browser |
-| Bundler | não envia JS extra | envia JS e hidrata |
-| Uso de hooks | `use client` não permitido | Hooks liberados |
+| Item         | Server                     | Client             |
+| ------------ | -------------------------- | ------------------ |
+| Execução     | Node.js / edge             | Browser            |
+| Bundler      | não envia JS extra         | envia JS e hidrata |
+| Uso de hooks | `use client` não permitido | Hooks liberados    |
 
 ## Quando usar cada um
 
@@ -26,7 +26,7 @@ description: Explicação direta para apresentar durante o workshop NorteJS.
 
 ```tsx
 // app/eventos/page.tsx (Server Component)
-import { getEvents } from '@/data/events';
+import { getEvents } from "@/data/events";
 
 export default async function Eventos() {
   const events = await getEvents();
@@ -41,8 +41,8 @@ export default async function Eventos() {
 ```
 
 ```tsx
-'use client';
-import { useState } from 'react';
+"use client";
+import { useState } from "react";
 
 type RsvpButtonProps = { eventId: string };
 

@@ -21,12 +21,12 @@ Next.js é um framework opinativo sobre React que resolve renderização (SSR/SS
 
 ## Next.js vs React puro vs Node.js (Express/Nest)
 
-| Critério | Next.js | React puro | Node.js (Express/Nest) |
-| --- | --- | --- | --- |
-| Roteamento | automático por arquivo | manual (React Router) | manual (REST/GraphQL) |
-| Renderização | SSR/SSG/ISR nativos | SPA (CSR) | responde dados, não views |
-| Deploy | um build único | precisa de bundler + server | precisa de frontend separado |
-| Casos ideais | apps híbridos fullstack | SPAs simples | APIs dedicadas |
+| Critério     | Next.js                 | React puro                  | Node.js (Express/Nest)       |
+| ------------ | ----------------------- | --------------------------- | ---------------------------- |
+| Roteamento   | automático por arquivo  | manual (React Router)       | manual (REST/GraphQL)        |
+| Renderização | SSR/SSG/ISR nativos     | SPA (CSR)                   | responde dados, não views    |
+| Deploy       | um build único          | precisa de bundler + server | precisa de frontend separado |
+| Casos ideais | apps híbridos fullstack | SPAs simples                | APIs dedicadas               |
 
 ## O que NÃO será coberto neste workshop
 
@@ -39,14 +39,15 @@ Next.js é um framework opinativo sobre React que resolve renderização (SSR/SS
 
 ```ts
 type WorkshopQuestion = {
-  profile: 'frontend' | 'backend';
-  need: 'seo' | 'api' | 'dashboard';
+  profile: "frontend" | "backend";
+  need: "seo" | "api" | "dashboard";
 };
 
 export function nextjsIsFit(question: WorkshopQuestion) {
-  if (question.need === 'seo') return 'Mostre SSR e metadata dinâmica.';
-  if (question.profile === 'backend') return 'Enfatize API Routes e familiaridade com Node.js.';
-  return 'Comece pelo App Router e navegação sem config extra.';
+  if (question.need === "seo") return "Mostre SSR e metadata dinâmica.";
+  if (question.profile === "backend")
+    return "Enfatize API Routes e familiaridade com Node.js.";
+  return "Comece pelo App Router e navegação sem config extra.";
 }
 ```
 

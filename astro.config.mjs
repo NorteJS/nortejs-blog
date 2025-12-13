@@ -20,7 +20,7 @@ export default defineConfig({
 			],
 			sidebar: [
 				{
-					label: 'Workshop Next.js',
+					label: 'Módulo Next.js',
 					items: [
 						{ label: 'Introdução', slug: 'introducao' },
 						{ label: 'Preparação do Ambiente', slug: 'preparacao-do-ambiente' },
@@ -29,6 +29,12 @@ export default defineConfig({
 						{ label: 'Server vs Client Components', slug: 'server-components-vs-client-components' },
 						{ label: 'Backend no Next.js', slug: 'backend-no-nextjs' },
 						{ label: 'Conclusão', slug: 'conclusao' },
+					],
+				},
+				{
+					label: 'Módulo REST & HTTP',
+					items: [
+						{ label: 'HTTP e REST', slug: 'rest' },
 					],
 				},
 			],

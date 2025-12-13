@@ -12,11 +12,11 @@ description: Mostre como construir APIs leves dentro do próprio projeto e quand
 
 ```ts
 // app/api/eventos/route.ts
-import { NextResponse } from 'next/server';
+import { NextResponse } from "next/server";
 
 const eventos = [
-  { id: 'meetup', title: 'Meetup NorteJS', city: 'Belém' },
-  { id: 'workshop', title: 'Workshop Next.js', city: 'Manaus' },
+  { id: "meetup", title: "Meetup NorteJS", city: "Belém" },
+  { id: "workshop", title: "Workshop Next.js", city: "Manaus" },
 ];
 
 export async function GET() {
@@ -31,7 +31,9 @@ export async function GET() {
 
 ```ts
 export async function getEventos() {
-  const response = await fetch('http://localhost:3000/api/eventos', { cache: 'no-store' });
+  const response = await fetch("http://localhost:3000/api/eventos", {
+    cache: "no-store",
+  });
   return (await response.json()) as { id: string; title: string }[];
 }
 ```

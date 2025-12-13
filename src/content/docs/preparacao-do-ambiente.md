@@ -35,14 +35,14 @@ pnpm create next-app nortejs-next --typescript --eslint --app --no-tailwind --sr
 ## Exemplo prático de checklist em código
 
 ```ts
-type Tool = 'node' | 'pnpm' | 'create-next-app';
+type Tool = "node" | "pnpm" | "create-next-app";
 
 type LabStatus = Record<Tool, { installed: boolean; version: string }>;
 
 export const defaultStatus: LabStatus = {
-  node: { installed: true, version: '20.11.0' },
-  pnpm: { installed: true, version: '9.12.0' },
-  'create-next-app': { installed: false, version: 'npx' },
+  node: { installed: true, version: "20.11.0" },
+  pnpm: { installed: true, version: "9.12.0" },
+  "create-next-app": { installed: false, version: "npx" },
 };
 ```
 
