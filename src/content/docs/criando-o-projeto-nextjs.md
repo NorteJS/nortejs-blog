@@ -43,7 +43,7 @@ Mostre onde ficam Server Components por padrão (`app/...`) e como separar utili
 export default function Home() {
   return (
     <section className="space-y-2">
-      <h1 className="text-3xl font-semibold">NorteJS Next.js Kickoff</h1>
+      <h1 className="text-3xl font-semibold">Next.js pontapé inicial (Kickoff)</h1>
       <p>App criado ao vivo com create-next-app + App Router.</p>
     </section>
   );

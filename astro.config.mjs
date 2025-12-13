@@ -4,10 +4,13 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://nortejs.github.io/nortejs-blog/',
+	base: '/nortejs-blog/',
 	integrations: [
 		starlight({
-			title: 'NorteJS Next.js Kickoff',
-			description: 'Guia introdutório de Next.js pensado para palestras e workshops da comunidade NorteJS.',
+			title: 'Next.js pontapé inicial (Kickoff)',
+			description:
+				'Guia prático e colaborativo para introduzir Next.js a devs que já dominam Node.js ou que querem desbravar o mundo TS e JS, cobrindo App Router, rotas, componentes server/client, API Routes e Design System de UI em workshops da comunidade.',
 			logo: {
 				src: './src/assets/logo.svg',
 				alt: 'NorteJS',

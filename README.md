@@ -1,6 +1,6 @@
-# NorteJS Next.js Kickoff
+# Next.js pontapé inicial (Kickoff)
 
-> Sugestão de nome do projeto: **NorteJS Next.js Kickoff** — material oficial da comunidade para palestras e workshops introdutórios.
+> Guia prático e colaborativo para introduzir Next.js a devs que já dominam Node.js ou querem desbravar o mundo TS/JS, cobrindo App Router, rotas, componentes server/client, API Routes e Design System de UI em workshops da comunidade NorteJS.
 
 ## Objetivo
 
@@ -35,6 +35,9 @@ Comandos extras:
 
 ```
 .
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
 ├── astro.config.mjs
 ├── package.json
 ├── pnpm-lock.yaml
@@ -42,6 +45,7 @@ Comandos extras:
 │   └── logo.svg
 ├── src/
 │   ├── assets/
+│   │   └── logo.svg
 │   ├── content/
 │   │   └── docs/
 │   │       ├── backend-no-nextjs.md
@@ -57,6 +61,15 @@ Comandos extras:
 ```
 
 Cada arquivo `.md`/`.mdx` corresponde a uma seção do workshop descrita no sumário lateral.
+
+## Deploy no GitHub Pages
+
+O projeto está configurado para publicar em `https://nortejs.github.io/nortejs-blog/`, usando GitHub Pages + GitHub Actions:
+
+1. No repositório da comunidade, habilite **Settings → Pages → Source = GitHub Actions**.
+2. Confirme que o workflow `.github/workflows/deploy.yml` está na branch `main`.
+3. Todo push em `main` executa: instala pnpm, roda `pnpm install`, `pnpm run build` e publica o artefato no Pages.
+4. O `astro.config.mjs` já define `site` e `base` adequados para `nortejs.github.io/nortejs-blog`. Se o projeto for renomeado ou forkado, atualize essas propriedades para refletir a nova URL.
 
 ## Como contribuir
 
