@@ -5,9 +5,24 @@ description: Contextualize Next.js para devs NorteJS que já vivem o ecossistema
 
 ## O que é Next.js
 
-Next.js é um framework opinativo sobre React que resolve renderização (SSR/SSG), roteamento, dados e empacotamento sem exigir configuração manual. Ele combina servidor e cliente em um único projeto, permitindo que você mantenha o foco em produto em vez de build tooling.
+O _Next.js_ é um frameworks opinativo para React focado em performance e facilidade para desenvolvimento.
 
-## Por que Next.js é relevante para devs Node.js
+Além de ser um **framework opinativo** que implementa as mais novas funcionalidades do React, o Next.js também traz uma coleção de componentes que permite, de forma fácil, que sua aplicação seja performática, acessível e use as melhores práticas.
+
+## Quando a gente fala de Next.js a gente fala do que?
+
+- Roteamento baseado em arquivos (File-based Routing);
+- SSR - Renderização no Servidor (SSR é o principal mas podemos escolher outras formas como SSG, ISR, CSR);
+- API Routes - Criar APIs dentro do próprio Next.js
+- Backend + Frontend (para isso é necessário um servidor)
+- Otimizações e performance - Imagens - Code Splitting (Divisão de Código) - SEO - Carregamento rápido e boas métricas de performance
+  -E, a partir do Next.JS 13 - Server Components
+
+## Funcionalidadades segundo a Vercel
+
+<img src="/nextjs-features.png" alt="Funcionalidades do Next.js segundo a Vercel" width="800" height="300" />
+
+<!-- ## Por que Next.js é relevante para devs Node.js
 
 - aproveita seu conhecimento de APIs, middlewares e streams;
 - roda em cima do runtime que você já domina (Node.js ou edge runtimes compatíveis);
@@ -51,4 +66,4 @@ export function nextjsIsFit(question: WorkshopQuestion) {
 }
 ```
 
-Use esse snippet para discutir como Next.js resolve dores específicas de quem já trabalha com Node.js todos os dias.
+Use esse snippet para discutir como Next.js resolve dores específicas de quem já trabalha com Node.js todos os dias. -->

@@ -22,7 +22,12 @@ export default defineConfig({
 				{
 					label: 'Módulo Next.js',
 					items: [
+						{ label: 'Boas-vindas', slug: 'boas-vindas' },
+						{ label: 'Quem somos nós?', slug: 'quem-somos-nos' },
+						{ label: 'O que vamos aprender?', slug: 'o-que-vamos-aprender' },
+						{ label: 'Pré-requisitos', slug: 'pre-requisitos' },
 						{ label: 'Introdução', slug: 'introducao' },
+						{ label: 'Por que usar next.js', slug: 'por-que-usar-nextjs' },
 						{ label: 'Preparação do Ambiente', slug: 'preparacao-do-ambiente' },
 						{ label: 'Criando o Projeto', slug: 'criando-o-projeto-nextjs' },
 						{ label: 'Rotas e Layouts', slug: 'rotas-e-layouts' },
