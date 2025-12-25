@@ -1,0 +1,74 @@
+---
+title: Um pouco de história
+description: Um pouco de história sobre o Next.js e sua evolução ao longo do tempo.
+---
+
+import { Image } from "astro:assets";
+import brendanEich from "../../assets/brendan-eich.png";
+import popjs from "../../assets/popjs.png";
+import ajax from "../../assets/ajax.png";
+import angularjs from "../../assets/angularjs.png";
+import butwhataboutajax from "../../assets/but-what-about-ajax.png";
+import timelineFrameworks from "../../assets/timeline-frameworks.png";
+import stateReact from "../../assets/state-react.png";
+
+Por que o Next.js se tornou um dos frameworks frontend mais populares nos últimos anos? E por que é adotado sem ressalvas em grandes aplicações em produção?
+
+## Eras da web
+
+### A era das páginas estáticas (1990–1999)
+
+- HTML e links.
+- PHP e HTML gerado no servidor.
+  ![Geocities screenshot](https://guias.codante.io/next-introdutorio/_astro/geocities.DeXiqS2A_2j3Wo0.webp)
+- JavaScript e início da interatividade (popups, mensagens). **(1995)**
+  - Criado por Brendan Eich na Netscape.
+  - Originalmente chamado Mocha, depois LiveScript, e finalmente JavaScript.
+    <Image src={brendanEich} alt="Brendan Eich" />
+    <Image src={popjs} alt="PopJS" />
+- Ajax — precursor dos frameworks JavaScript. **(2005)**
+  {" "}
+  <Image src={ajax} alt="Ajax" />
+  <Image src={angularjs} alt="AngularJS" />
+  <Image src={butwhataboutajax} alt="but what about Ajax?" />
+
+### A era do JavaScript (2000–2015)
+
+- Aplicações cada vez mais complexas — difícil fazer tudo só com JS.
+- Surgimento do Angular e do React (seguido pelo Vue).
+- Adoção da componentização e da renderização no cliente; popularização do JAMstack.
+- Necessidade de bundlers; Create React App (CRA) como solução prática.
+- Problemas: SEO, bundles grandes e desempenho limitado em hardware fraco.
+  <Image src={timelineFrameworks} alt="timeline" />
+- Tornar a view uma função do estado do aplicativo — tudo o que você precisava era se preocupar com a forma como o estado da sua aplicação mudava, e o React cuidava do resto.
+<Image style="margin: auto" src={stateReact} alt="state React" />
+
+### A era do Next (2016–presente)
+
+- Next.js combina simplicidade de páginas estáticas, renderização no servidor, componentização do React e boa experiência das SPAs.
+- Facilita criação de páginas, rotas e APIs; oferece geração estática, SSR e carregamento sob demanda.
+- Funcionalidades como code splitting, otimização de imagens e Incremental Static Regeneration (ISR) melhoram performance, SEO e experiência do usuário.
+
+## Conclusão
+
+O Next.js ganhou adesão por convergir soluções para atender tanto sites rápidos e leves quanto aplicações interativas e robustas.
+
+<blockquote class="twitter-tweet" data-media-max-width="1000"><p lang="en" dir="ltr">Next.js developers be like: <a href="https://t.co/aPvwXB3ImI">pic.twitter.com/aPvwXB3ImI</a></p>&mdash; Hassan (@nutlope) <a href="https://twitter.com/nutlope/status/1617629798075097091?ref_src=twsrc%5Etfw">January 23, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+## O futuro do Next.js
+
+- Server Components
+  - Melhorar performance e experiência do usuário.
+  - Uso mais eficiente dos recursos do servidor; streaming de UI.
+- Server Actions
+  - Nova forma de integrar front e backend; simplifica acesso a bancos e APIs.
+- React 19
+  - Otimizações para Server Components e desempenho geral.
+- Integração frontend/backend
+  - Aprofundamento da integração entre camadas para simplificar desenvolvimento e melhorar performance.
+
+Observações:
+
+- O ecossistema de Server Components ainda está em estágio inicial.
+- Novas abordagens e desafios devem surgir com a evolução das ferramentas.
+- É importante acompanhar as mudanças para tirar proveito das melhorias.
+- Dificuldade de se manter atualizado 🤯 
