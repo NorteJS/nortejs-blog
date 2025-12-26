@@ -1,0 +1,48 @@
+---
+title: Preparação do Ambiente
+description: Checklist rápido para palestras e workshops da NorteJS com Next.js.
+---
+
+import { Image } from "astro:assets";
+import homeFigma from "../../assets/Home.png";
+
+## Node.js (LTS)
+
+- Recomendado: versão LTS corrente (22.x)+.
+- Garanta que todes tenham `node -v` alinhado antes da oficina.
+- Sugestão para o slide inicial: link para [download do Node.js](https://nodejs.org/pt/download/).
+
+## npm / pnpm
+
+Escolha um gerenciador único para evitar conflitos:
+
+- `npm` já vem com Node. 
+- `pnpm` mais rápido e eficiente. Instale com:
+  ```bash
+  npm install -g pnpm
+  ```
+
+## create-next-app
+
+Execute o scaffold direto no terminal e peça para a turma acompanhar:
+
+Exemplo:
+```bash
+pnpm create next-app nortejs-next --typescript --eslint --app --tailwind --src-dir --use-pnpm
+```
+
+O que vamos usar:
+```bash
+git clone
+```
+
+
+## Boas práticas iniciais
+
+1. Configure variáveis de ambiente com `.env.local` (mesmo que vazias) para mostrar o fluxo.
+2. Rode `pnpm dev` imediatamente para validar a instalação.
+3. Adicione um script `"lint": "next lint"` para reforçar qualidade de código.
+
+## Links do Figma
+<Image src={homeFigma} alt="Home Figma" />
+<a href="https://www.figma.com/design/eUNA2DgrQeB4TkTbnLbBMI/Vagas-NorteJS?node-id=0-1&t=huXxxFdYXe4e0Bql-1" target="_blank" rel="noopener noreferrer">Link do Figma</a>
