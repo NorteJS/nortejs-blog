@@ -3,7 +3,7 @@ title: O que vamos aprender?
 description: Visão geral do conteúdo que será abordado no workshop de Next.js para devs Node.js.
 ---
 
-Vamos começar? Antes de mais nada, um overview do que iremos tratar no Workshop de hoje. Vamos em todo o workshop utilizar uma única aplicação de "Nome a definir ainda" e que será completamente feita com Next.Js.
+Vamos começar? Antes de mais nada, um overview do que iremos tratar no Workshop de hoje. Vamos em todo o workshop utilizar uma única aplicação de **VagasNortejs** e que será completamente feita com Next.Js.
 
 Se você não consegue esperar, já pode ir olhando no nosso Figma para ver a aplicação que será construída. O link é esse.
 

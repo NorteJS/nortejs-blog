@@ -7,6 +7,7 @@ Para aproveitar ao máximo o workshop de **Next.js** versãos 15+, é importante
 - **Noções de React**: Entender componentes, props, estado e hooks básicos.
 - **Ferramentas instaladas**:
   - Node.js (versão LTS recomendada, como 22.x)
+  - Docker e Docker Compose (opcional, mas recomendado para ambientes isolados)
   - Um gerenciador de pacotes (npm ou pnpm)
   - Editor de código (recomendamos VSCode ou Vim)
 - **Conhecimentos básicos de terminal/linha de comando**: Saber navegar entre pastas, criar arquivos e executar comandos simples.
