@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import starlightThemeGalaxy from 'starlight-theme-galaxy'
 
 // https://astro.build/config
 export default defineConfig({
@@ -8,6 +9,7 @@ export default defineConfig({
 	base: '/nortejs-blog/',
 	integrations: [
 		starlight({
+			 plugins: [starlightThemeGalaxy()],
 			title: 'Next.js pontapé inicial (Kickoff)',
 			description:
 				'Guia prático e colaborativo para introduzir Next.js a devs que já dominam Node.js ou que querem desbravar o mundo TS e JS, cobrindo App Router, rotas, componentes server/client, API Routes e Design System de UI em workshops da comunidade.',
