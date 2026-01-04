@@ -19,6 +19,7 @@ export default defineConfig({
 				alt: 'NorteJS',
 			},
 			social: [
+				{ icon: 'phone', label: 'WhatsApp', href: 'https://chat.whatsapp.com/DKs8hMHMUQNB0Uf2Ef6jiC' },
 				{ icon: 'github', label: 'GitHub', href: 'https://github.com/NorteJS/vagas-nortejs' },
 				{ icon: 'linkedin', label: 'linkedin', href: 'https://www.linkedin.com/company/nortejs' },
 				{ icon: 'instagram', label: 'instagram', href: 'https://www.instagram.com/nortejs_', },
