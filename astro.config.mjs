@@ -1,5 +1,6 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
+import mdx from '@astrojs/mdx';
 import starlight from '@astrojs/starlight';
 import starlightThemeGalaxy from 'starlight-theme-galaxy'
 
@@ -9,7 +10,7 @@ export default defineConfig({
 	base: '/nortejs-blog/',
 	integrations: [
 		starlight({
-			 plugins: [starlightThemeGalaxy()],
+			plugins: [starlightThemeGalaxy()],
 			title: 'Next.js pontapé inicial (Kickoff)',
 			description:
 				'Guia prático e colaborativo para introduzir Next.js a devs que já dominam Node.js ou que querem desbravar o mundo TS e JS, cobrindo App Router, rotas, componentes server/client, API Routes e Design System de UI em workshops da comunidade.',
@@ -18,34 +19,82 @@ export default defineConfig({
 				alt: 'NorteJS',
 			},
 			social: [
-				{ icon: 'github', label: 'GitHub', href: 'https://github.com/NorteJS' },
+				{ icon: 'github', label: 'GitHub', href: 'https://github.com/NorteJS/vagas-nortejs' },
+				{ icon: 'linkedin', label: 'linkedin', href: 'https://www.linkedin.com/company/nortejs' },
+				{ icon: 'instagram', label: 'instagram', href: 'https://www.instagram.com/nortejs_', },
 			],
 			sidebar: [
 				{
-					label: 'Módulo Next.js',
-					items: [
-						{ label: 'Boas-vindas', slug: 'boas-vindas' },
-						{ label: 'Quem somos nós?', slug: 'quem-somos-nos' },
-						{ label: 'O que vamos aprender?', slug: 'o-que-vamos-aprender' },
-						{ label: 'Pré-requisitos', slug: 'pre-requisitos' },
-						{ label: 'Introdução', slug: 'introducao' },
-						{ label: 'Por que usar next.js?', slug: 'por-que-usar-nextjs' },
-						{ label: 'Um pouco de história', slug: 'um-pouco-de-historia' },
-						{ label: 'Preparação do Ambiente', slug: 'preparacao-do-ambiente' },
-						{ label: 'Criando o Projeto', slug: 'criando-o-projeto-nextjs' },
-						{ label: 'Rotas e Layouts', slug: 'rotas-e-layouts' },
-						{ label: 'Server vs Client Components', slug: 'server-components-vs-client-components' },
-						{ label: 'Backend no Next.js', slug: 'backend-no-nextjs' },
-						{ label: 'Conclusão', slug: 'conclusao' },
-					],
+					label: 'Intro ao Workshop',
+					autogenerate: {
+						directory: '00 - introducao',
+					},
+				},
+
+				{
+					label: 'Setup do Projeto',
+					autogenerate: {
+						directory: '01 - Setup do Projeto',
+					},
 				},
 				{
-					label: 'Módulo REST & HTTP',
-					items: [
-						{ label: 'HTTP e REST', slug: 'rest' },
-					],
+					label: 'Básico de Roteamento',
+					autogenerate: {
+						directory: '02 - Roteamento Básico',
+					},
+				},
+
+				{
+					label: 'Estilização',
+					autogenerate: {
+						directory: '03 - Estilização',
+					},
+				},
+				{
+					label: 'Layouts e Páginas',
+					autogenerate: {
+						directory: '03a - Layouts e Páginas',
+					},
+				},
+				{
+					label: 'Componentes do Next',
+					autogenerate: {
+						directory: '04 - Componentes do Next',
+					},
+				},
+				{
+					label: 'A Teoria dos Server Components',
+					autogenerate: {
+						directory: '05 - teoria dos server components',
+					},
+				},
+				{
+					label: 'Fetch de Dados e Rotas Dinâmicas',
+					autogenerate: {
+						directory: '06 - Fetch de Dados e Rotas Dinâmicas',
+					},
+				},
+				{
+					label: 'Server Actions e Formulários',
+					autogenerate: {
+						directory: '07 - Server Actions e Formulários',
+					},
+				},
+				{
+					label: 'Responsividade da Aplicação',
+					autogenerate: {
+						directory: '08 - Responsividade da Aplicação',
+					},
+				},
+				{
+					label: 'Finalização',
+					autogenerate: {
+						directory: '09 - Finalização',
+					},
 				},
 			],
 		}),
+		mdx(),
+
 	],
 });
