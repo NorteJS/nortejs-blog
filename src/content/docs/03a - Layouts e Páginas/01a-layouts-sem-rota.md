@@ -59,13 +59,13 @@ O layout global vai ser responsável por ser aplicado a todas as páginas. Ele s
 
 ### 2. O Layout das páginas home / sobre
 
-Aqui precisamos apenas colocar um container (que nada mais é que uma largura máxima) de `5xl`, e um padding em cima e embaixo:
+Aqui precisamos apenas colocar um container (que nada mais é que uma largura máxima) de `7xl`, e um padding em cima e embaixo:
 
 ```typescript title="app/(marketing)/layout.tsx"
 export default function MarketingLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
-  return <div className="mx-auto max-w-5xl py-10">{children}</div>;
+  return <div className="mx-auto max-w-7xl py-10">{children}</div>;
 }
 ```
 
@@ -79,7 +79,7 @@ export default function VagasLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <div className="w-full border-t bg-gray-50">
-      <div className="mx-auto max-w-5xl py-10">{children}</div>
+      <div className="mx-auto max-w-7xl py-10">{children}</div>
     </div>
   );
 }

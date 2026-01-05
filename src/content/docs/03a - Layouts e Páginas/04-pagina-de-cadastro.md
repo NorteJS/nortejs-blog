@@ -13,6 +13,13 @@ Vamos agora instalar mais alguns componentes do `shadcn/ui`"
 - Input
 - Label
 - Textarea
+- Separator
+- Badge
+
+``` bash
+pnpm dlx shadcn@latest add card input label textarea separator badge
+```
+
 
 ## Extraindo o código de um item de formulário para um componente
 

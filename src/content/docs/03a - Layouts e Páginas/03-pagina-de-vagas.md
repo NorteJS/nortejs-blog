@@ -2,10 +2,9 @@
 title: Página de Vagas
 ---
 
-
 Vamos agora transpor do Figma para o HTML a página de vagas.
 
-Atenção: Ainda não iremos buscar os dados da API - iremos ver *fetch de dados* mais para frente.
+Atenção: Ainda não iremos buscar os dados da API - iremos ver _fetch de dados_ mais para frente.
 
 ## Criando o componente `<JobItem>`
 
@@ -28,11 +27,11 @@ export default function JobItem() {
       <h3 className="font-display text-lg font-medium text-gray-700">
         Designer
       </h3>
-      <h4 className="font-light text-gray-500">Google</h4>
-      <h4 className="font-light text-gray-500">São Paulo</h4>
-      <h4 className="font-light text-gray-500">R$8.000,00</h4>
-      <Button className="cursor-pointer" variant={"outline"}>
-        Mais
+      <h4 className="font-normal text-gray-500">Google</h4>
+      <h4 className="font-normal text-gray-500">São Paulo</h4>
+      <h4 className="font-normal text-gray-500">R$8.000,00</h4>
+      <Button className="cursor-pointer" variant={"default"}>
+        Ver vaga
       </Button>
     </article>
   );
@@ -59,5 +58,4 @@ export default function Vagas() {
     </main>
   );
 }
-
 ```

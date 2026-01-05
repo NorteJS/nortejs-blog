@@ -40,10 +40,10 @@ export default function Home() {
   return (
     <section className="text-center">
       <h1 className="text-5xl font-black font-display w-xl mx-auto">
-        Diga adeus às longas buscas para uma vaga
+        Diga adeus às longas buscas por vagas
       </h1>
       <Button className="cursor-pointer mt-12" variant={"outline"}>
-        Busque Uma Vaga
+        Buscar vagas
       </Button>
       <img
         src="/people.png"
@@ -68,8 +68,12 @@ export default function Sobre() {
   return (
     <section className="flex justify-between gap-4">
       <div>
-        <h1 className="font-display mb-16 max-w-xl text-5xl font-black">
-          O que você procura, <span className="text-blue-400">nós temos</span>!
+        <h1 className="font-display mb-16 lg:max-w-3xl max-lg:text-4xl text-5xl font-black">
+          <span className="text-blue-400 lg:text-nowrap">
+            Encontre a vaga certa
+          </span>
+          <br />
+          <span>para você!</span>
         </h1>
         <div className="space-y-6 text-lg text-gray-700">
           <p className="max-w-xl">

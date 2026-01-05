@@ -37,7 +37,7 @@ import { cn } from '@/lib/utils';
 
 export default function NotFound() {
   return (
-    <main className="max-w-5xl mx-auto py-20 text-center">
+    <main className="max-w-7xl mx-auto py-20 text-center">
       <h2 className="text-4xl font-display font-black ">
         Nada encontrado aqui...
       </h2>
