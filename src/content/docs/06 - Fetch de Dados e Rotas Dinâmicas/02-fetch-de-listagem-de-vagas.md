@@ -26,7 +26,7 @@ type JobItemProps = {
 export default function JobItem({ job }: JobItemProps) {
   return (
     <article className="flex w-full items-center justify-between border border-t-4 border-black bg-white px-6 py-4 shadow transition-colors hover:border-blue-400">
-      <h3 className="font-display text-lg font-medium text-gray-700">
+      <h3 className="font-maven text-lg font-medium text-gray-700">
         {job.title}
       </h3>
       <h4 className="font-light text-gray-500">{job.company}</h4>
@@ -66,7 +66,7 @@ export default async function Vagas() {
 
   return (
     <main className="">
-      <h2 className="font-display mb-12 text-2xl font-bold">Todas as Vagas</h2>
+      <h2 className="font-maven mb-12 text-2xl font-bold">Todas as Vagas</h2>
       <div className="space-y-8">
         {jobs.map((job: any) => (
           <JobItem key={job.id} job={job} />

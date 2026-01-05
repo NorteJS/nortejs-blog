@@ -2,7 +2,6 @@
 title: Página de Cadastro de Vagas
 ---
 
-
 Vamos agora montar a página de Cadastro de Vagas
 
 ## Instalando outros componentes do shadcn
@@ -16,14 +15,13 @@ Vamos agora instalar mais alguns componentes do `shadcn/ui`"
 - Separator
 - Badge
 
-``` bash
+```bash
 pnpm dlx shadcn@latest add card input label textarea separator badge
 ```
 
-
 ## Extraindo o código de um item de formulário para um componente
 
-Para evitar repetição e HTMLs muito longos, podemos extrair os *labels* e estilização para um componente chamado `app/vagas/cadastro/form-item.tsx`.
+Para evitar repetição e HTMLs muito longos, podemos extrair os _labels_ e estilização para um componente chamado `app/vagas/cadastro/form-item.tsx`.
 
 O código deste componente está abaixo:
 
@@ -66,7 +64,7 @@ import { createJob } from "@/lib/actions";
 export default function Cadastro() {
   return (
     <main>
-      <h2 className="font-display mb-12 text-2xl font-bold">Cadastrar Vaga</h2>
+      <h2 className="font-maven mb-12 text-2xl font-bold">Cadastrar Vaga</h2>
       <Card className="mx-auto w-full py-8">
         <form action={createJob}>
           <CardContent className="space-y-6">
@@ -185,5 +183,4 @@ export default function Cadastro() {
     </main>
   );
 }
-
 ```

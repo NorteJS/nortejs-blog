@@ -52,7 +52,7 @@ import Form from "next/form";
 export default function Cadastro() {
   return (
     <main>
-      <h2 className="font-display mb-12 text-2xl font-bold">Cadastrar Vaga</h2>
+      <h2 className="font-maven mb-12 text-2xl font-bold">Cadastrar Vaga</h2>
       <Card className="mx-auto w-full py-8">
         <Form action={createJob}>
           <CardContent className="space-y-6">
